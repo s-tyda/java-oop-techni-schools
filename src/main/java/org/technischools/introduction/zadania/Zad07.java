@@ -6,7 +6,7 @@ Napisz program, która dla tablicy typu int[] wyświetli sumę wszystkich elemen
 
 import java.util.Arrays;
 
-public class Zad7 {
+public class Zad07 {
     public static void main(String[] args) {
         int[] array = new int[] {1, 2, 3, 4, 5, 12, 22, 33};
         int sum = 0;

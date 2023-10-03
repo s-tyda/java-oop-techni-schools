@@ -11,7 +11,7 @@ do przechowywania stanu gry w szachy. Potrafiłbyś zachować w nim ostatni stan
 z Deep Blue z 1997 roku?
 */
 
-public class Zad9 {
+public class Zad09 {
     public static void main(String[] args) {
         int[][] array = new int[2][];
         array[0] = new int []{1 ,2, 3};

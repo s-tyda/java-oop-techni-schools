@@ -5,7 +5,7 @@ Napisz program, który wyświetli trzy różne zdania opisujące aktualną pogod
 W czwartej linii wypisz sumaryczną długość trzech poprzednich zdań.
 */
 
-public class Zad1 {
+public class Zad01 {
     public static void main(String[] args) {
         String a = "dzis jest cieplo";
         String b = "dzis nie jest cieplo";

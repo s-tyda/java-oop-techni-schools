@@ -6,7 +6,7 @@ Napisz program pobierający trójelementową tablicę liczb i zwracający najwi�
 
 import java.util.Arrays;
 
-public class Zad8 {
+public class Zad08 {
     public static void main(String[] args) {
         int[] array = new int[] {-4, -2, -12, 30};
         int max = array[0];
