@@ -19,13 +19,17 @@
 
 Java jest językiem kompilowanym. Oznacza to, że kod źródłowy jest tłumaczony przez tzw. kompilator na inny rodzaj kodu.  
 
-![compile](../../../../resources/compile.png)
+<p align="center">
+    <img src="../../../../resources/compile.png" width="50%" height="50%" />
+</p>
 
 W Javie są dwa etapy kompilacji. Pierwszy etap to kompilacja kodu źródłowego na kod bajtowy za pomocą kompilatora `javac`.
 Taki kod bajtowy jest następnie w trakcie działania programu kompilowany przez kompilator `JIT` (ang, Just in Time) na 
 kod maszynowy, czyli na instrukcje procesora.
 
-![jdk](../../../../resources/jdk.png)
+<p align="center">
+    <img src="../../../../resources/jdk.png" width="50%" height="50%" />
+</p>
 
 Kompilator `JIT`, będący częścią maszyny wirtualnej Javy `JVM` (ang. Java Virtual Machine) razem z standardowymi 
 bibliotekami  Javy tworzą `JRE`, czyli środowisko uruchomieniowe Javy (ang. Java Runtime Environment).
@@ -39,7 +43,9 @@ z kodu źródłowego, co w praktyce oznacza tyle, że nie da się utworzyć zmie
 typowanych dynamicznie typy nadawane są w trakcie działania programu. Oznacza to, że zmienna może w różnych momentach
 programu przechowywać wartości różnych typów.
 
-![data-types](../../../../resources/data-types.png)
+<p align="center">
+    <img src="../../../../resources/data-types.png" width="50%" height="50%" />
+</p>
 
 W Javie wyróżniamy podział typów na `prymitywne` (proste) i `referencyjne` (złożone). Typy proste to takie, które
 przetrzymują wartość bezpośrednio w pamięci RAM. Typy referencyjne, jak mówi nazwa, przetrzymują tylko referencję do
