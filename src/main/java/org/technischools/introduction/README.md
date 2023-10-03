@@ -20,7 +20,7 @@
 Java jest językiem kompilowanym. Oznacza to, że kod źródłowy jest tłumaczony przez tzw. kompilator na inny rodzaj kodu.  
 
 <p align="center">
-    <img src="../../../../resources/compile.png" width="50%" height="50%" />
+    <img src="../../../../resources/compile.png" width="25%" height="25%" />
 </p>
 
 W Javie są dwa etapy kompilacji. Pierwszy etap to kompilacja kodu źródłowego na kod bajtowy za pomocą kompilatora `javac`.
@@ -28,7 +28,7 @@ Taki kod bajtowy jest następnie w trakcie działania programu kompilowany przez
 kod maszynowy, czyli na instrukcje procesora.
 
 <p align="center">
-    <img src="../../../../resources/jdk.png" width="50%" height="50%" />
+    <img src="../../../../resources/jdk.png" width="25%" height="25%" />
 </p>
 
 Kompilator `JIT`, będący częścią maszyny wirtualnej Javy `JVM` (ang. Java Virtual Machine) razem z standardowymi 
@@ -44,7 +44,7 @@ typowanych dynamicznie typy nadawane są w trakcie działania programu. Oznacza 
 programu przechowywać wartości różnych typów.
 
 <p align="center">
-    <img src="../../../../resources/data-types.png" width="50%" height="50%" />
+    <img src="../../../../resources/data-types.png" width="40%" height="40%" />
 </p>
 
 W Javie wyróżniamy podział typów na `prymitywne` (proste) i `referencyjne` (złożone). Typy proste to takie, które
