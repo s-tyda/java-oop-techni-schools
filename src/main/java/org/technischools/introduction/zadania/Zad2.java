@@ -1,4 +1,8 @@
-package org.technischools.syntax.zadania;
+package org.technischools.introduction.zadania;
+
+/*
+Napisz program, który sprawdzi czy temperatura przekazana jako argument jest dodatnia.
+*/
 
 public class Zad2 {
     public static void main(String[] args) {

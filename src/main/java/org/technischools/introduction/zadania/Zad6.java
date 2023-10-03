@@ -1,6 +1,10 @@
-package org.technischools.syntax.zadania;
+package org.technischools.introduction.zadania;
 
-public class zad6 {
+/*
+Przerób pętlę z zadania poprzedniego na pętlę while.
+*/
+
+public class Zad6 {
     public static void main(String[] args) {
         int i = -10;
         while(i < 40){
