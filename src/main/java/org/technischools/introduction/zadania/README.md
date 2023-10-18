@@ -24,3 +24,4 @@
 21.   
     1. Utwórz metodę pobierającą dodatnią liczbę całkowitą x, która wyświetli na ekranie liczby od zera do x.  
     2. Jeśli w zadaniu 1. użyłeś pętli for przerób tę metodę na while (lub odwrotnie).  
+22. Napisz metodę, która przyjmie tablicę liczb całkowitych i zwróci iloczyn jej elementów.

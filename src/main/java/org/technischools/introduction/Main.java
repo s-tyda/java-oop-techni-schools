@@ -64,5 +64,9 @@ public class Main {
         Zad21.printNumbersFromZeroToX(3);
         System.out.println("\nZad21.2");
         Zad21.printNumbersFromZeroToX2(3);
+
+        // Test zad 22
+        System.out.println("\nZad22");
+        System.out.println(Zad22.table(new int[] {1, 3, 5}));
     }
 }
