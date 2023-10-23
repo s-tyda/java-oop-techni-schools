@@ -2,11 +2,11 @@ package org.technischools.oop.pojazdy;
 
 import java.util.Arrays;
 
-public class Samolot extends Pojazd{
+public class Plane extends Vehicle {
     private float rozpietosc;
     private int[] lokacjaWiezowca;
 
-    public Samolot(String kolor, float pojemnoscBaku, float waga, float rozpietosc) {
+    public Plane(String kolor, float pojemnoscBaku, float waga, float rozpietosc) {
         super(kolor, pojemnoscBaku, waga);
         this.rozpietosc = rozpietosc;
         this.lokacjaWiezowca = new int[]{1,0};

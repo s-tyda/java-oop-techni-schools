@@ -1,4 +1,4 @@
-package org.technischools.oop;
+package org.technischools.oop.geometry;
 
 public class Point {
     private float X;

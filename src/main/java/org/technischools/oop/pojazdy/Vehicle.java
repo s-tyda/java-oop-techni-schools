@@ -1,12 +1,12 @@
 package org.technischools.oop.pojazdy;
 
-public abstract class Pojazd {
+public abstract class Vehicle {
 
     private String kolor;
     private float pojemnoscBaku;
     private float waga;
 
-    public Pojazd(String kolor, float pojemnoscBaku, float waga) {
+    public Vehicle(String kolor, float pojemnoscBaku, float waga) {
         this.kolor = kolor;
         this.pojemnoscBaku = pojemnoscBaku;
         this.waga = waga;

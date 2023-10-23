@@ -1,9 +1,9 @@
 package org.technischools.oop.pojazdy;
 
-public class Samochod extends Pojazd {
+public class Car extends Vehicle {
     private int iloscDrzwi;
 
-    public Samochod(String kolor, float pojemnoscBaku, float waga, int iloscDrzwi) {
+    public Car(String kolor, float pojemnoscBaku, float waga, int iloscDrzwi) {
         super(kolor, pojemnoscBaku, waga);
         this.iloscDrzwi = iloscDrzwi;
     }
