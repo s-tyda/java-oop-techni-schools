@@ -17,7 +17,14 @@ public class Main {
 //    Samochod <- Pojazd <- Object
 
     public static void main(String[] args) {
-//        Pojazd pojazd = new Pojazd("czerwony", 50, 2);
+        Maziak maziak = new Maziak("Niebieski", 75.8);
+        System.out.println(maziak.getKolor());
+        Maziak maziak2 = new Maziak("Czerwony");
+        System.out.println(maziak2);
+        System.out.println(Math.sqrt(50));
+        maziak2.pisz();
+
+        //        Pojazd pojazd = new Pojazd("czerwony", 50, 2);
 //        System.out.println(pojazd);
 //        pojazd.zrobWRR();
         Car car = new Car("niebieski", 100, 3, 5);
@@ -40,25 +47,25 @@ public class Main {
             vehicle.zrobWRR();
         }
 
-        Maziak maziak = new Maziak("Niebieski", 50);
-        System.out.println(maziak.getKolor());
-        System.out.println(maziak.getWaga());
+        Maziak maziak3 = new Maziak("Niebieski", 50);
+        System.out.println(maziak3.getKolor());
+        System.out.println(maziak3.getWaga());
 
-        Maziak maziak2 = maziak;
-        maziak2.setKolor("Czarny");
-//        maziak2.kolor = "Czarny";
+        Maziak maziak4 = maziak;
+        maziak4.setKolor("Czarny");
+//        maziak4.kolor = "Czarny";
 
-//        System.out.println(maziak.kolor);
-//
-//        Maziak maziak3 = new Maziak("Czerowny", 100);
 //        System.out.println(maziak3.kolor);
-//        System.out.println(maziak3.waga);
+//
+//        Maziak maziak5 = new Maziak("Czerowny", 100);
+//        System.out.println(maziak5.kolor);
+//        System.out.println(maziak5.waga);
 
 
-        Maziak maziak4 = new Maziak("Zielony");
-        System.out.println(maziak4);
-        maziak4.pisz();
-        Maziak.pisz(maziak4);
+        Maziak maziak6 = new Maziak("Zielony");
+        System.out.println(maziak6);
+        maziak6.pisz();
+        Maziak.pisz(maziak6);
 
         Samochod auto1 = new Samochod("Czarny", 300, "Toyota", "Yaris", 5);
         System.out.println(auto1.marka);
