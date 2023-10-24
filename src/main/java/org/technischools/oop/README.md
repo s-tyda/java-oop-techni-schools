@@ -63,7 +63,7 @@ public class Test {
 
 ---
 
-Zadanie 2.
+Zadanie 2.  
 Stwórz klasę `User`, reprezentującą użytkownika. Klasa powinna
 zawierać:
 - prywatne pole typu String - `login`;
