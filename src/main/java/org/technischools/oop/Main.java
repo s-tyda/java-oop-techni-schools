@@ -1,5 +1,7 @@
 package org.technischools.oop;
 
+import org.technischools.oop.generics.Box;
+import org.technischools.oop.generics.Box3;
 import org.technischools.oop.geometry.Point;
 import org.technischools.oop.geometry.Shape;
 import org.technischools.oop.geometry.Star;
@@ -11,6 +13,9 @@ import org.technischools.oop.pojazdy2.Pojazd;
 import org.technischools.oop.pojazdy2.Samochod;
 import org.technischools.oop.pojazdy2.Samolot;
 import org.technischools.oop.users.User;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -96,5 +101,20 @@ public class Main {
 //        System.out.println(point1.distance(point2));
 //
 //        Shape star = new Star();
+
+        List<String> list = Arrays.asList("string1", "string2");
+        for (String element:list) {
+            element.
+        }
+
+        Box<Integer> box = new Box<>(5);
+        int x = box.getValue();
+        box.setValue("string");
+
+        Box3 box3 = new Box3(5);
+        Box3 box4 = new Box3("string");
+        int y = (int) box3.getValue();
+        box3.setValue("string");
+
     }
 }

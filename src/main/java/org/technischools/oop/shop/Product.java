@@ -1,6 +1,6 @@
 package org.technischools.oop.shop;
 
-public abstract class Product implements Shop {
+public abstract class Product implements Shop, Comparable<Product>{
 
     protected String productName;
     protected float priceNet;
@@ -31,5 +31,26 @@ public abstract class Product implements Shop {
             return true;
         }
         return false;
+    }
+
+    static float SumProducts(Product[] products){
+        float sum = 0;
+        for (Product product: products) {
+            sum += product.value();
+        }
+        return sum;
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        float value1 = value();
+        float value2 = o.value();
+        if (value1 > value2){
+            return 1;
+        }
+        else if (value1 < value2){
+            return -1;
+        }
+        return 0;
     }
 }
