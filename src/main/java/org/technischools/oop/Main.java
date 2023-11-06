@@ -12,6 +12,8 @@ import org.technischools.oop.pojazdy.Plane;
 import org.technischools.oop.pojazdy2.Pojazd;
 import org.technischools.oop.pojazdy2.Samochod;
 import org.technischools.oop.pojazdy2.Samolot;
+import org.technischools.oop.users.Student;
+import org.technischools.oop.users.Teacher;
 import org.technischools.oop.users.User;
 
 import java.util.Arrays;
@@ -87,8 +89,25 @@ public class Main {
             pojazd.zrobWRR();
         }
 
-        User User = new User("User1","1234");
-        System.out.println(User.authorize("User1","1234"));
+        User user = new User("User1","1234");
+        System.out.println(user.authorize("User1","1234"));
+
+        Teacher teacher = new Teacher("User2", "3456", "1");
+        user.print();
+        teacher.print();
+
+        Student student = new Student("student1", "0987", "3");
+        student.print();
+
+        User user2 = new Student("student1", "0987", "3");
+
+        User[] usersArray = new User[2];
+        usersArray[0] = teacher;
+        usersArray[1] = student;
+        for (User us: usersArray) {
+            us.print();
+        }
+
 //        Point point1 = new Point(2.0f, 3.0f);
 //        point1.move(1f, 2f);
 //        System.out.println(point1.getX());
@@ -102,14 +121,14 @@ public class Main {
 //
 //        Shape star = new Star();
 
-        List<String> list = Arrays.asList("string1", "string2");
-        for (String element:list) {
-            element.
-        }
+//        List<String> list = Arrays.asList("string1", "string2");
+//        for (String element:list) {
+//            element.
+//        }
 
-        Box<Integer> box = new Box<>(5);
-        int x = box.getValue();
-        box.setValue("string");
+//        Box<Integer> box = new Box<>(5);
+//        int x = box.getValue();
+//        box.setValue("string");
 
         Box3 box3 = new Box3(5);
         Box3 box4 = new Box3("string");

@@ -15,4 +15,8 @@ public class User {
         }
         return false;
     }
+    public void print() {
+        System.out.println(this.login);
+        System.out.println(this.password);
+    }
 }
