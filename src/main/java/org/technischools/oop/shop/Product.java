@@ -42,15 +42,19 @@ public abstract class Product implements Shop, Comparable<Product>{
     }
 
     @Override
-    public int compareTo(Product o) {
-        float value1 = value();
-        float value2 = o.value();
-        if (value1 > value2){
+    public int compareTo(Product p) {
+        float value = value();
+        float valueP = p.value();
+        if (value > valueP){
             return 1;
-        }
-        else if (value1 < value2){
+        } else if (value < valueP) {
             return -1;
         }
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Product(name= " + productName + ", value= " + value() + ")";
     }
 }

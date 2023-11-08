@@ -74,7 +74,7 @@ public class Main {
         maziak6.pisz();
         Maziak.pisz(maziak6);
 
-        Samochod auto1 = new Samochod("Czarny", 300, "Toyota", "Yaris", 5);
+        Pojazd auto1 = new Samochod("Czarny", 300, "Toyota", "Yaris", 5);
         System.out.println(auto1.marka);
 //        auto1.zrobWRR();
 
