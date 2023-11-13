@@ -1,8 +1,10 @@
 package org.technischools.oop.Geometria;
 
-public class Kwadrat extends FiguraAbstrakcyjna {
+public class Kwadrat implements FiguraAbstrakcyjna {
+    int a;
+
     public Kwadrat(int a) {
-        super(a);
+        this.a = a;
     }
 
     @Override

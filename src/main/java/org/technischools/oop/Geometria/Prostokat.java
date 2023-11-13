@@ -1,6 +1,7 @@
 package org.technischools.oop.Geometria;
 
-public class Prostokat extends FiguraAbstrakcyjna {
+public class Prostokat implements FiguraAbstrakcyjna {
+    int a;
     int b;
     @Override
     public float pole() {
@@ -13,7 +14,7 @@ public class Prostokat extends FiguraAbstrakcyjna {
     }
 
     public Prostokat(int a, int b) {
-        super(a);
+        this.a = a;
         this.b = b;
     }
 }

@@ -1,7 +1,6 @@
 package org.technischools.oop.shop;
 
 public abstract class Product implements Shop, Comparable<Product>{
-
     protected String productName;
     protected float priceNet;
     protected float priceGross;

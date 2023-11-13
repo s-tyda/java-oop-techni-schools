@@ -1,11 +1,12 @@
 package org.technischools.oop.Geometria;
 
-public class Triangle extends FiguraAbstrakcyjna {
+public class Triangle implements FiguraAbstrakcyjna {
+    int a;
     int b;
     int c;
 
     public Triangle(int a, int b, int c) {
-        super(a);
+        this.a = a;
         this.b = b;
         this.c = c;
     }
