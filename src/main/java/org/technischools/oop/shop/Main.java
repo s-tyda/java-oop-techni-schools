@@ -1,5 +1,6 @@
 package org.technischools.oop.shop;
 
+import org.technischools.oop.Adam.List;
 import org.technischools.oop.generics.Box;
 
 import org.technischools.oop.generics.list;
@@ -13,16 +14,25 @@ public class Main {
         array[1] = new Milk("Mleko taty", 4.99f, 100);
         array[2] = new Bread("hlep żydni", 19.39f, 1945);
 
-        System.out.println(array[0].value());
-        System.out.println(array[1].value());
-//        System.out.println(array[0].compareTo(array[1]));
+//        System.out.println(Arrays.toString(array));
+//        Arrays.sort(array);
+//        System.out.println(Arrays.toString(array));
 
-        Arrays.sort(array, Comparator.comparing(Product::value));
-        System.out.println(Arrays.toString(array));
+        List<Product> lista = new List<>(array);
+        System.out.println(lista);
+        System.out.println(lista.min());
+        System.out.println(lista.max());
 
-        list<Product> productlist = new list<>(array);
-        System.out.println(productlist.Max());
-        System.out.println(productlist.Min());
+//        System.out.println(array[0].value());
+//        System.out.println(array[1].value());
+////        System.out.println(array[0].compareTo(array[1]));
+//
+//        Arrays.sort(array, Comparator.comparing(Product::value));
+//        System.out.println(Arrays.toString(array));
+//
+//        list<Product> productlist = new list<>(array);
+//        System.out.println(productlist.Max());
+//        System.out.println(productlist.Min());
 
 //        System.out.println(array[0].order(30));
 //        System.out.println(Product.SumProducts(array));

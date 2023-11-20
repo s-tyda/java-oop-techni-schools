@@ -1,5 +1,6 @@
 package org.technischools.oop;
 
+import org.technischools.oop.Adam.Adam;
 import org.technischools.oop.generics.Box;
 import org.technischools.oop.generics.Box3;
 import org.technischools.oop.geometry.Point;
@@ -12,9 +13,12 @@ import org.technischools.oop.pojazdy.Plane;
 import org.technischools.oop.pojazdy2.Pojazd;
 import org.technischools.oop.pojazdy2.Samochod;
 import org.technischools.oop.pojazdy2.Samolot;
+import org.technischools.oop.shop.Book;
 import org.technischools.oop.users.Student;
 import org.technischools.oop.users.Teacher;
 import org.technischools.oop.users.User;
+import org.technischools.oop.virus.LinearVirusScanner;
+import org.technischools.oop.virus.VirusScanner;
 
 import java.util.Arrays;
 import java.util.List;
@@ -130,10 +134,28 @@ public class Main {
 //        int x = box.getValue();
 //        box.setValue("string");
 
-        Box3 box3 = new Box3(5);
-        Box3 box4 = new Box3("string");
-        int y = (int) box3.getValue();
-        box3.setValue("string");
+//        Box3 box3 = new Box3(5);
+//        Box3 box4 = new Box3("string");
+//        int y = (int) box3.getValue();
+//        box3.setValue("string");
+//
+//        VirusScanner scanner = new LinearVirusScanner();
+//        scanner.scan();
+
+
+//        Box<Integer> box = new Box<>(5);
+        Box<Book> box = new Box<>(new Book("", 0f, 0));
+        System.out.println(box.getValue());
+        System.out.println(box.getValue().getClass().getSimpleName());
+//        box.setValue(10);
+
+
+        Adam<String> adam1 = new Adam<>("Ekspert programowania");
+        System.out.println(adam1.getValue());
+        adam1.setValue("Laik programowania");
+        System.out.println(adam1.getValue());
+        System.out.println(adam1.getValue().getClass().getSimpleName());
+//        adam1.setValue(5);
 
     }
 }

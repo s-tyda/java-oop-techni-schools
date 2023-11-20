@@ -7,7 +7,7 @@ public abstract class VirusScanner {
         doScan();
     }
 
-    public abstract void prepareDataset();
-    public abstract void transformData();
-    public abstract void doScan();
+    protected abstract void prepareDataset();
+    protected abstract void transformData();
+    protected abstract void doScan();
 }
