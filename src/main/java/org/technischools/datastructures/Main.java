@@ -38,25 +38,28 @@ public class Main {
         System.out.println(list.containsAll(list2));
 
 //        list.clear();
+        System.out.println(list);
         int z = list.get(0);
         System.out.println(z);
 
         list2.clear();
         list2.add(5);
 
-
         System.out.println(list);
         System.out.println(list2);
         System.out.println(list.equals(list2));
 
+        list.add(5);
+        System.out.println(list);
         System.out.println(list.indexOf(5));
+        System.out.println(list.lastIndexOf(5));
         list.set(0, 4);
         System.out.println(list);
         Integer[] arr = (Integer[]) list.toArray();
 //        list.sort();
         Collections.sort(list);
 
-        list.subList(0, 1);
+        System.out.println(list.subList(0, 1));
     }
 
 }
