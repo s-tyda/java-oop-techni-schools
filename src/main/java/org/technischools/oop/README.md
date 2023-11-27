@@ -7,9 +7,11 @@
 
 ## Praca domowa
 
+Uwaga: każdą tablicę, potrzebną na potrzeby wykonania zadań, można zastąpić listą.
+
 ---
 
-Zadanie 1.  
+### Zadanie 1.  
 Zdefiniuj abstrakcyjną klasę modelującą zwierzę. Klasa powinna posiadać:
 - prywatne pole typu int - wiek;
 - prywatne pole typu boolean - płeć;
@@ -61,9 +63,25 @@ public class Test {
 }
 ```
 
+Do sprawdzenia czy obiekt jest danej klasy (dla rozróżnienia Makaka od Zająca) można wykorzystać słowo kluczowe `instanceof`, np:
+
+```java
+public class Test {
+  public static void main(String[] args) {
+    Animal animal = new Macaque();
+    if (animal instanceof Macaque) {  // jeśli zmienna jest klasy Makak
+        // kod kiedy zmienna jest klasy Makak
+    }
+    else if (animal instanceof Hare){  // jeśli zmienna jest klasy Zając
+        // kod kiedy zmienna jest klasy Zając
+    }
+  }
+}
+```
+
 ---
 
-Zadanie 2.  
+### Zadanie 2.  
 Stwórz klasę `User`, reprezentującą użytkownika. Klasa powinna
 zawierać:
 - prywatne pole typu String - `login`;
@@ -75,7 +93,7 @@ zawierać:
 
 Dany jest interfejs `NotificationProvider`, posiadający
 metodę `send`, przyjmującą w argumentach wiadomość i 
-użytkownika do którego tę wiadomość wysłać.
+użytkownika (obiekt klasy `User`) do którego tę wiadomość wysłać.
 
 Stwórz klasy implementujące dany interfejs, kolejno:
 - `EmailProvider` - do wysyłania powiadomień email
@@ -96,5 +114,5 @@ Stwórz klasę `NotificationService`, która będzie posiadać:
 zawierającą po jednej instancji `EmailProvider` i 
 `SMSProvider`
 - publiczną metodę `notify`, przyjmującą w argumencie wiadomość i
-  użytkownika, którego należy powiadomić. Metoda w zależności 
+  użytkownika (obiekt klasy `User`), którego należy powiadomić. Metoda w zależności 
 od preferencji użytkownika wyśle odpowiednie rodzaje powiadomień.
