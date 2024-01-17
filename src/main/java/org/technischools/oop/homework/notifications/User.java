@@ -1,6 +1,14 @@
 package org.technischools.oop.homework.notifications;
 
 public class User {
+    public User(String login, String email, String phoneNumber, boolean isEmailNotificationsOn, boolean isSMSNotificationsOn) {
+        this.login = login;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.isEmailNotificationsOn = isEmailNotificationsOn;
+        this.isSMSNotificationsOn = isSMSNotificationsOn;
+    }
+
     private String login;
     private String email;
     private String phoneNumber;
@@ -25,5 +33,16 @@ public class User {
 
     public boolean isSMSNotificationsOn() {
         return isSMSNotificationsOn;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "login='" + login + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", isEmailNotificationsOn=" + isEmailNotificationsOn +
+                ", isSMSNotificationsOn=" + isSMSNotificationsOn +
+                '}';
     }
 }
