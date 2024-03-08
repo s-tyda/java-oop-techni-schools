@@ -1,5 +1,7 @@
 package org.technischools.datastructures;
 
+import org.technischools.oop.users.User;
+
 import java.util.*;
 
 public class Main {
@@ -60,6 +62,48 @@ public class Main {
         Collections.sort(list);
 
         System.out.println(list.subList(0, 1));
+
+        Set<String> stringSet = new HashSet<>();
+        stringSet.add("cos");
+
+        Set<String> stringLinkedSet = new LinkedHashSet<>();
+        stringSet.add("cos");
+
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (Integer key:map.keySet()) {
+            Integer value = map.get(key);
+        }
+
+        for (Map.Entry<Integer, Integer> entry:map.entrySet()) {
+            Integer key = entry.getKey();
+            Integer value = entry.getValue();
+        }
+
+//        Lista wartosci
+//        map.values();
+    }
+    public static Map<Integer, Integer> dupaKalanMorski(List<Integer> dupa){
+        Map<Integer, Integer> chuj = new HashMap<>();
+        for (int i = 0; i < dupa.size(); i++) {
+            Integer element = dupa.get(i);
+            if(chuj.containsKey(element)) {
+                chuj.put(element, chuj.get(element) + 1);
+            }else{
+                chuj.put(element, 1);
+            }
+
+
+        }
+        Map<Integer, Integer> chuj2 = new HashMap<>();
+        for (Map.Entry<Integer, Integer> entry: chuj.entrySet()){
+            if(entry.getValue() != 1){
+                chuj2.put(entry.getKey(), entry.getValue());
+            }
+        }
+
+        return chuj2;
+
     }
 
 }

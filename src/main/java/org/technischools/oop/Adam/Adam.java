@@ -1,6 +1,8 @@
 package org.technischools.oop.Adam;
 
-public class Adam <T extends Comparable<T>>{
+import org.technischools.oop.shop.Product;
+
+public class Adam <T>{
     private T value;
 
     public Adam(T value){
