@@ -1,7 +1,5 @@
 package org.technischools.datastructures;
 
-import org.technischools.oop.users.User;
-
 import java.util.*;
 
 public class Main {
@@ -83,26 +81,24 @@ public class Main {
 //        Lista wartosci
 //        map.values();
     }
-    public static Map<Integer, Integer> dupaKalanMorski(List<Integer> dupa){
-        Map<Integer, Integer> chuj = new HashMap<>();
-        for (int i = 0; i < dupa.size(); i++) {
-            Integer element = dupa.get(i);
-            if(chuj.containsKey(element)) {
-                chuj.put(element, chuj.get(element) + 1);
+    public static Map<Integer, Integer> duplicatesOccurrences(List<Integer> list){
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < list.size(); i++) {
+            Integer element = list.get(i);
+            if(map.containsKey(element)) {
+                map.put(element, map.get(element) + 1);
             }else{
-                chuj.put(element, 1);
+                map.put(element, 1);
             }
-
-
         }
-        Map<Integer, Integer> chuj2 = new HashMap<>();
-        for (Map.Entry<Integer, Integer> entry: chuj.entrySet()){
+        Map<Integer, Integer> map2 = new HashMap<>();
+        for (Map.Entry<Integer, Integer> entry: map.entrySet()){
             if(entry.getValue() != 1){
-                chuj2.put(entry.getKey(), entry.getValue());
+                map2.put(entry.getKey(), entry.getValue());
             }
         }
 
-        return chuj2;
+        return map2;
 
     }
 
