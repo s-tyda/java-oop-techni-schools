@@ -2,8 +2,6 @@ package org.technischools.datastructures.gr1;
 
 import java.util.*;
 
-import org.technischools.datastructures.gr1.Zad_1;
-
 public class Zad1_3 {
     public static boolean isPerfectPangram(String str1) {
         str1 =  str1.replaceAll(" ", "");
@@ -44,7 +42,7 @@ public class Zad1_3 {
         return set.containsAll(subset);
     }
 
-    public static Set<Integer> dupa(Set<Integer> first, Set<Integer> second){
+    public static Set<Integer> commonPart(Set<Integer> first, Set<Integer> second){
         Set<Integer> common = new HashSet<Integer>();
         for (Integer iterator: first) {
             if (second.contains(iterator)){

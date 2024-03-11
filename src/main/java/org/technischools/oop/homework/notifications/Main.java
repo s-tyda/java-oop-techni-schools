@@ -60,7 +60,7 @@ public class Main {
         return lettersMap;
     }
 
-//     static Map<String, Integer> dupa(String text){
+//     static Map<String, Integer> countLetters2(String text){
 //        Map<String, Integer> wordMap = new HashMap<>();
 //        String[] jakubMarzeda = text.split(" ");
 //         for (int i = 0; i < jakubMarzeda.length ; i++) {
