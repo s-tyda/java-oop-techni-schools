@@ -8,25 +8,24 @@ public class Magazine {
     private Map<String, Integer> magazine = new HashMap<>();
 
     public void add(String product, Integer count){
+        if (count == null || count < 0){
+            throw new IllegalArgumentException("Illegal count");
+        }
         magazine.put(product, count);
     }
 
-    public String removeOne(String product){
-        if (magazine.containsKey(product)){
-            magazine.put(product, magazine.get(product) - 1);
-            return "Product count changed";
-        } else {
-            return "Product not fount";
+    public void removeOne(String product){
+        if (!magazine.containsKey(product)){
+            throw new ProductNotFoundException(product);
         }
+        magazine.put(product, magazine.get(product) - 1);
     }
 
-    public String removeAll(String product){
-        if (magazine.containsKey(product)){
-            magazine.remove(product);
-            return "All instances of product removed";
-        } else {
-            return "Product not fount";
+    public void removeAll(String product){
+        if (!magazine.containsKey(product)){
+            throw new ProductNotFoundException(product);
         }
+        magazine.remove(product);
     }
 
     public void clear(){
@@ -39,5 +38,12 @@ public class Magazine {
         magazine.add("Gacie dyrektora", 1);
         magazine.removeOne("Mefedron");
         magazine.removeAll("Gacie dyrektora");
+//        magazine.add("test", -3);
+        try{
+        magazine.removeOne("test");
+        }
+        catch (ProductNotFoundException ex){
+            System.out.println(ex.getProduct());
+        }
     }
 }
