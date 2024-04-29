@@ -1,4 +1,4 @@
-package org.technischools.files;
+package org.technischools.files.gr2;
 
 import java.io.*;
 import java.nio.file.Files;
